@@ -1,0 +1,140 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html><html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tonpick.game - Guide</title><style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0f172a;
+  color:white;
+}
+
+header{
+  background:linear-gradient(90deg,#06b6d4,#3b82f6);
+  padding:20px;
+  text-align:center;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+.card{
+  background:#111827;
+  border-radius:14px;
+  padding:18px;
+  margin-bottom:18px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+}
+
+h2{
+  color:#22d3ee;
+}
+
+button{
+  background:#3b82f6;
+  border:none;
+  padding:10px 14px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+button:hover{
+  background:#2563eb;
+}
+
+.hidden{
+  display:none;
+}
+
+.level-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.level-table td, .level-table th{
+  border:1px solid #1f2937;
+  padding:10px;
+  text-align:center;
+}
+
+.level-table th{
+  background:#1f2937;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  opacity:0.6;
+}
+</style></head><body><header>🎮 Découvre Tonpick.game<br><a href="https://tonpick.game/?ref=ELINEL" target="_blank" style="color:white;font-size:16px;text-decoration:underline;">👉 Lien d'inscription officiel</a></header><div class="container"><div class="card">
+<h2>1) Qu’est‑ce que tonpick.game ?</h2>
+<p>
+Tonpick.game est un faucet TON gratuit permettant de gagner du TON chaque heure en résolvant des captchas.
+Il propose aussi des jeux "provably fair" pour gagner plus rapidement.
+</p>
+</div><div class="card">
+<h2>2) Comment s’inscrire ?</h2>
+<button onclick="toggle('inscrire')">Afficher / Masquer</button>
+<div id="inscrire" class="hidden">
+<ul>
+<li>Choisissez un nom d'utilisateur</li>
+<li>Entrez votre email</li>
+<li>Créez un mot de passe</li>
+<li>Complétez le captcha</li>
+<li>Cliquez sur S’inscrire</li>
+</ul>
+</div>
+</div><div class="card">
+<h2>3) Comment gagner ?</h2>
+<p>
+Réclamez du TON gratuit chaque heure et jouez pour multiplier vos gains grâce aux jeux équitables.
+</p>
+<button onclick="showAlert()">Astuce</button>
+</div><div class="card">
+<h2>4) Comment déposer ?</h2>
+<p>
+Utilisez votre adresse de dépôt TON ou scannez le QR code depuis la plateforme.
+Tous les dépôts sont acceptés après confirmation.
+</p>
+</div><div class="card">
+<h2>5) Comment retirer ?</h2>
+<p>
+Entrez votre wallet TON, confirmez par email si le 2FA n’est pas activé, puis finalisez le retrait.
+</p>
+</div><div class="card">
+<h2>6) Niveaux</h2>
+<table class="level-table">
+<tr><th>Niveau</th><th>Total Misé (TON)</th></tr>
+<tr><td>Stone</td><td>0.1</td></tr>
+<tr><td>Iron</td><td>1</td></tr>
+<tr><td>Bronze</td><td>10</td></tr>
+<tr><td>Silver</td><td>100</td></tr>
+<tr><td>Gold</td><td>1,000</td></tr>
+<tr><td>Platinum</td><td>10,000</td></tr>
+<tr><td>Diamond</td><td>100,000</td></tr>
+<tr><td>Master</td><td>1,000,000</td></tr>
+</table>
+</div></div><footer>© Tonpick Guide - Page Démo Interactive</footer><script>
+function toggle(id){
+  const el=document.getElementById(id);
+  el.classList.toggle('hidden');
+}
+
+function showAlert(){
+  alert("💡 Conseil: Ne misez que ce que vous êtes prêt à perdre.");
+}
+</script></body>
+</html>
